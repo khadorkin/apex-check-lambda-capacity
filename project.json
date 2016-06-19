@@ -1,0 +1,13 @@
+{
+  "name": "apex-check-lambda-capacity",
+  "description": "apex check lambda capacity",
+  "nameTemplate": "{{.Function.Name}}",
+  "handler": "lambda_function.lambda_handler",
+  "memory": 128,
+  "timeout": 5,
+  "runtime": "python",
+  "defaultEnvironment": "dev",
+  "hooks": {
+    "build": "[[ -d placebo ]] || pip install -r requirements.txt -t ./"
+  }
+}

@@ -1,0 +1,3 @@
+[submodule "functions/check_lambda_capacity"]
+	path = functions/check_lambda_capacity
+	url = https://github.com/ijin/check_lambda_capacity.git
